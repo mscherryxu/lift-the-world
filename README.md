@@ -9,7 +9,9 @@
 <br>
 You can use Lift the World to track how much weight you've moved during a specific workout and compare it to real life objects. You're guaranteed to be impressed with how strong you are! You can also compete for a spot on the global leadership board. 
 
-![Gif of Lift the World app][https://media4.giphy.com/media/z3CYMbpdbB6k1ncGPA/giphy.gif]{ style="display: block; margin: 0 auto"}
+<p align="center">
+  <img src="https://media4.giphy.com/media/z3CYMbpdbB6k1ncGPA/giphy.gif" style="width:250px">
+</p>
 
 ### Wannabe IFBB Pros
 - [Cherry Xu](https://github.com/mscherryxu)
