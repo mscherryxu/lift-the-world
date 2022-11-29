@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIdCardAlt } from "@fortawesome/free-solid-svg-icons";
 
 const contacts = [
   {
@@ -10,15 +10,15 @@ const contacts = [
       "https://media-exp1.licdn.com/dms/image/C4E03AQH0MhShnu4r_A/profile-displayphoto-shrink_400_400/0/1658867372014?e=1668038400&v=beta&t=S7Ha1giy8_-f7GrKr-AzIBWxSUKZLaBRp4eXJl7Theg",
     github: "https://github.com/nickyjhong",
     linkedin: "https://www.linkedin.com/in/nicolejhong/",
-    personal: "https://nicolehong.dev"
+    personal: "https://nicolehong.dev",
   },
   {
     name: "Cherry Xu",
     image:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQEol4Y_4bO4JQ/profile-displayphoto-shrink_800_800/0/1598046633166?e=1668038400&v=beta&t=VboBOjwJOXHeGSVvzkbPRBZA2s551bj6zR0HrJlbO-s",
+      "https://media-exp1.licdn.com/dms/image/D4E03AQHNsmSXEPD5rw/profile-displayphoto-shrink_800_800/0/1664555998479?e=1675296000&v=beta&t=MdpbhaddZaJVOI4oZAmsy63FRrpkc7rmUd_W7r7GXLA",
     github: "https://github.com/mscherryxu",
     linkedin: "https://www.linkedin.com/in/cherryxu-rdcdn/",
-    personal: "https://cherryxu.dev"
+    personal: "https://cherryxu.dev",
   },
   {
     name: "Ryan Scoville",
@@ -50,16 +50,16 @@ export default function Contact() {
               </div>
               <div className="contact-info-container">
                 <a href={contact.github}>
-                  <i className="fa fa-github fa-social github" />
+                  <i className="fa-brands fa-github" />
                 </a>
                 <a href={contact.linkedin}>
                   <i className="fa fa-linkedin-square fa-social linkedin" />
                 </a>
                 {contact.personal ? (
-                <a href={contact.personal}>
-                  <FontAwesomeIcon icon={faIdCardAlt} className="id-alt"/>
-                </a>
-                ): (
+                  <a href={contact.personal}>
+                    <FontAwesomeIcon icon={faIdCardAlt} className="id-alt" />
+                  </a>
+                ) : (
                   ""
                 )}
               </div>
