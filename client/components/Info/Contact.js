@@ -1,40 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIdCardAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faIdCardAlt } from "@fortawesome/free-solid-svg-icons";
 
-const contacts = [
-  {
-    name: "Nicole Hong",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQH0MhShnu4r_A/profile-displayphoto-shrink_400_400/0/1658867372014?e=1668038400&v=beta&t=S7Ha1giy8_-f7GrKr-AzIBWxSUKZLaBRp4eXJl7Theg",
-    github: "https://github.com/nickyjhong",
-    linkedin: "https://www.linkedin.com/in/nicolejhong/",
-    personal: "https://nicolehong.dev"
-  },
-  {
-    name: "Cherry Xu",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQEol4Y_4bO4JQ/profile-displayphoto-shrink_800_800/0/1598046633166?e=1668038400&v=beta&t=VboBOjwJOXHeGSVvzkbPRBZA2s551bj6zR0HrJlbO-s",
-    github: "https://github.com/mscherryxu",
-    linkedin: "https://www.linkedin.com/in/cherryxu-rdcdn/",
-    personal: "https://cherryxu.dev"
-  },
-  {
-    name: "Ryan Scoville",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C5603AQFdR4lLk2KT3g/profile-displayphoto-shrink_800_800/0/1661710087030?e=1668038400&v=beta&t=G3LDxufb2PG-LezSQ4jqZyOhwlYTH_ImGZGByH5AWBg",
-    github: "https://github.com/rscoville29",
-    linkedin: "https://www.linkedin.com/in/ryan-scoville/",
-  },
-  {
-    name: "Kyle Parkinson",
-    image:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQErE6TRASNA3g/profile-displayphoto-shrink_800_800/0/1636141078706?e=1668038400&v=beta&t=cZdeq655sOu8j8uUh3JpwOFUa-t18atKDe0EE74_X2s",
-    github: "https://github.com/kparki1130",
-    linkedin: "https://www.linkedin.com/in/kyle-e-parkinson/",
-  },
-];
+const contacts =
+  [
+    {
+      name: "Nicole Hong",
+      image: "https://avatars.githubusercontent.com/u/101421813?v=4",
+      github: "https://github.com/nickyjhong",
+      linkedin: "https://www.linkedin.com/in/nicolejhong/",
+      personal: "https://nicolehong.dev",
+    },
+    {
+      name: "Cherry Xu",
+      image: "https://avatars.githubusercontent.com/u/41312534?v=4",
+      github: "https://github.com/mscherryxu",
+      linkedin: "https://www.linkedin.com/in/cherryxu-rdcdn/",
+      personal: "https://cherryxu.dev",
+    },
+    {
+      name: "Ryan Scoville",
+      image: "https://avatars.githubusercontent.com/u/85287770?v=4",
+      github: "https://github.com/rscoville29",
+      linkedin: "https://www.linkedin.com/in/ryan-scoville/",
+    },
+    {
+      name: "Kyle Parkinson",
+      image: "https://avatars.githubusercontent.com/u/101378922?v=4",
+      github: "https://github.com/kparki1130",
+      linkedin: "https://www.linkedin.com/in/kyle-e-parkinson/",
+    },
+  ] || [];
 
 export default function Contact() {
   return (
@@ -45,21 +41,25 @@ export default function Contact() {
           return (
             <div className="contact-single-container" key={contact.name}>
               <div className="contact-pic-container">
-                <img src={contact.image} className="contact-pic" />
+                <img
+                  src={contact.image}
+                  className="contact-pic"
+                  alt={contact.name}
+                />
                 <p className="contact-info contact-name">{contact.name}</p>
               </div>
               <div className="contact-info-container">
                 <a href={contact.github}>
-                  <i className="fa fa-github fa-social github" />
+                  <i className="fa-brands fa-github" />
                 </a>
                 <a href={contact.linkedin}>
                   <i className="fa fa-linkedin-square fa-social linkedin" />
                 </a>
                 {contact.personal ? (
-                <a href={contact.personal}>
-                  <FontAwesomeIcon icon={faIdCardAlt} className="id-alt"/>
-                </a>
-                ): (
+                  <a href={contact.personal}>
+                    <FontAwesomeIcon icon={faIdCardAlt} className="id-alt" />
+                  </a>
+                ) : (
                   ""
                 )}
               </div>
