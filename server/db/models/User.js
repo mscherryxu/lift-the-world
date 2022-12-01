@@ -4,7 +4,6 @@ const db = require("../db");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const Sprite = require("./Sprite");
-require("dotenv").config();
 
 const SALT_ROUNDS = 5;
 
