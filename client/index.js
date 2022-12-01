@@ -5,7 +5,6 @@ import { Router } from "react-router-dom";
 import history from "./history";
 import store from "./store";
 import App from "./App";
-require("dotenv").config();
 
 ReactDOM.render(
   <Provider store={store}>
